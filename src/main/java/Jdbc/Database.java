@@ -5,10 +5,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Database {
-    private static String url = "jdbc:postgresql://localhost:5432/postgres";
-    private static String user = "postgres";
-    private static String password = "1234";
-    private static Connection con;
+    private static String url = "jdbc:postgresql://localhost:5432/postgres"; //Define a conexão com o Postgres
+    private static String user = "postgres";                                //Indica qual usário será utlizado para conectar ao banco.
+                                                                            // Deverá ser identico ao configurado no Postgres
+    private static String password = "1234";                                // Senha do usuário
+    private static Connection con;                                          //Objeto que fará a conexão com o banco
 
     public static Connection getConnection() {
         try {
